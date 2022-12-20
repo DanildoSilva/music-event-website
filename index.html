@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!--feather iicons cdn-->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!--font awesome cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--google fonts link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <title>Music Event Website</title>
+</head>
+<body>
+  
+  <header id="hero-section">
+    <nav class="navbar">
+      <a href="#hero-section" class="logo">EDMEX</a>
+      <ul class="nav-links close">
+        <li  onclick="changeMenuByLink()"><a href="#hero-section">Home</a></li>
+        <li  onclick="changeMenuByLink()"><a href="#events">Events</a></li>
+        <li  onclick="changeMenuByLink()"><a href="#artists">Artists</a></li>
+        <li  onclick="changeMenuByLink()"><a href="#">Blog</a></li>
+        <li onclick="changeMenuByLink()"><a href="#">Shop</a></li>
+      </ul>
+      <ul class="nav-icons">
+        <li><a href="#"><i data-feather="shopping-cart" class="icon"></i></a></li>
+        <li>
+          <input type="checkbox" id="menu">
+          <label for="menu" onclick="changeMenu()">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+          </label>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="cta-section">
+      <div class="text-section">
+        <h1 class="hero-title t1">JOIN</h1>
+        <h1 class="hero-title t2">THE <span>BEST EDM</span> MUSIC FESTIVAL</h1>
+      </div>
+      <div class="countdown">
+        <h1 class="section-title-1">HURRY UP!</h1>
+        <h2  class="section-title-2">LAST CHANCE TO GET YOUR TICKET</h2>
+        <div class="countdown-container">
+          <div class="countdown-el days-c">
+            <p class="text" id="days">0</p>
+            <span>days</span>
+          </div>
+          <div class="countdown-el hours-c">
+            <p class="text" id="hours">0</p>
+            <span>hours</span>
+          </div>
+          <div class="countdown-el minutes-c">
+            <p class="text" id="minutes">0</p>
+            <span>minutes</span>
+          </div>
+          <div class="countdown-el seconds-c">
+            <p class="text" id="seconds">0</p>
+            <span>seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="buy-button">
+        <a class="button">
+          <div class="inner-btn"><img src="https://img.icons8.com/ffffff/fluency-systems-regular/48/null/add-ticket.png"/></div>
+        </a>
+      </div>
+    </section>
+
+    <div class="background">
+      <div></div>
+    </div>
+  </header>
+
+  <section id="upcoming-events">
+    <h1 class="section-title-1" id="events">UPCOMING EVENTS</h1>
+    <h2 class="section-title-2">Lorem ipsum dolor sit amet consectetur.</h2>
+    <section class="events-section">
+
+      <section class="events-list">
+        <div class="event">
+          <div class="date">APR</div>
+          <div class="event-info">
+            <h3 class="event-title">SUMMER ELECTRONIC FESTIVAL</h3>
+            <div class="event-schedule">
+              <div class="event-location">
+                <i data-feather="map-pin" class="icon"></i>
+                <p>Amneville, France</p>
+              </div>
+              <div class="event-date">
+                <i data-feather="clock" class="icon"></i>
+                <p>April 23, 2023 - 14:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="date">JUN</div>
+          <div class="event-info">
+            <h3 class="event-title">SUMMER ELECTRONIC FESTIVAL</h3>
+            <div class="event-schedule">
+              <div class="event-location">
+                <i data-feather="map-pin" class="icon"></i>
+                <p>Luneburg, Germany</p>
+              </div>
+              <div class="event-date">
+                <i data-feather="clock" class="icon"></i>
+                <p>June 14, 2023 - 14:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="date">AUG</div>
+          <div class="event-info">
+            <h3 class="event-title">SUMMER ELECTRONIC FESTIVAL</h3>
+            <div class="event-schedule">
+              <div class="event-location">
+                <i data-feather="map-pin" class="icon"></i>
+                <p>Vila Nova de Arousa, Spain</p>
+              </div>
+              <div class="event-date">
+                <i data-feather="clock" class="icon"></i>
+                <p>August 20, 2023 - 14:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="date">OCT</div>
+          <div class="event-info">
+            <h3 class="event-title">SUMMER ELECTRONIC FESTIVAL</h3>
+            <div class="event-schedule">
+              <div class="event-location">
+                <i data-feather="map-pin" class="icon"></i>
+                <p>Castelpoto, Italy</p>
+              </div>
+              <div class="event-date">
+                <i data-feather="clock" class="icon"></i>
+                <p>October 09, 2023 - 14:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="events-img"></section>
+    </section>
+  </section>
+
+  <section id="artists">
+    <h1 class="section-title-1" id="artists">FEATURED ARTISTS</h1>
+    <h2 class="section-title-2">Lorem ipsum dolor sit amet consectetur.</h2>
+    <div class="artist-gallery">
+      <div class="artist-container">
+        <div class="artist-info">
+          <i data-feather="instagram" class="icon"></i>
+          <h4>@artist_name</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <ul class="artist-social-links">
+            <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-soundcloud"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <img src="./assets/artist-01.jpg" alt="artist-01">
+      </div>
+      <div class="artist-container">
+        <div class="artist-info">
+          <i data-feather="instagram" class="icon"></i>
+          <h4>@artist_name</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <ul class="artist-social-links">
+            <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-soundcloud"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <img src="./assets/artist-02.jpg" alt="artist-02">
+      </div>
+      <div class="artist-container">
+        <div class="artist-info">
+          <i data-feather="instagram" class="icon"></i>
+          <h4>@artist_name</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <ul class="artist-social-links">
+            <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-soundcloud"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <img src="./assets/artist-03.jpg" alt="artist-03">
+      </div>
+      <div class="artist-container">
+        <div class="artist-info">
+          <i data-feather="instagram" class="icon"></i>
+          <h4>@artist_name</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <ul class="artist-social-links">
+            <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-soundcloud"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <img src="./assets/artist-04.jpg" alt="artist-04">
+      </div>
+      <div class="artist-container">
+        <div class="artist-info">
+          <i data-feather="instagram" class="icon"></i>
+          <h4>@artist_name</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <ul class="artist-social-links">
+            <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-soundcloud"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <img src="./assets/artist-05.jpg" alt="artist-05">
+      </div>
+      <div class="artist-container">
+        <div class="artist-info">
+          <i data-feather="instagram" class="icon"></i>
+          <h4>@artist_name</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <ul class="artist-social-links">
+            <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-soundcloud"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <img src="./assets/artist-06.jpg" alt="artist-06">
+      </div>
+      <div class="artist-container">
+        <div class="artist-info">
+          <i data-feather="instagram" class="icon"></i>
+          <h4>@artist_name</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <ul class="artist-social-links">
+            <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-soundcloud"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <img src="./assets/artist-07.jpg" alt="artist-07">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1 class="section-title-1" id="artists">KEEP IN TOUCH</h1>
+    <div class="contact-cards">
+      <div class="card">
+        <i data-feather="map-pin" class="icon"></i>
+        <adress class="p-1">6765 Elmwood Ave., Cranston</adress>
+        <adress class="p-2">1111 Foothill Road, Oxford</adress>
+      </div>
+      <div class="card">
+        <i data-feather="mail" class="icon"></i>
+        <p class="p-1">lorem ipsum@edmex.com</p>
+        <p class="p-2">lorem ipsum@edmex.com</p>
+      </div>
+      <div class="card">
+        <i data-feather="phone" class="icon"></i>
+        <p class="p-1">(08) 5550 5550 5550</p>
+        <p class="p-2">(08) 7010 7010 7010</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <section class="articles">
+      <h2 class="section-title-2">LATEST EVENTS</h2>
+      <div class="line"></div>
+      <div class="articles-cards">
+        <div class="a-card">
+          <img src="./assets/tour-img-04.jpg" alt="Event Image">
+          <h3>LOREM IPSUM</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero porro facilis laborum voluptate sint nam excepturi maiores.</p>
+          <a href="#">Read more</a>
+        </div>
+        <div class="a-card">
+          <img src="./assets/tour-img-02.jpg" alt="Event Image">
+          <h3>LOREM IPSUM</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero porro facilis laborum voluptate sint nam excepturi maiores.</p>
+          <a href="#">Read more</a>
+        </div>
+        <div class="a-card">
+          <img src="./assets/tour-img-03.jpg" alt="Event Image">
+          <h3>LOREM IPSUM</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero porro facilis laborum voluptate sint nam excepturi maiores.</p>
+          <a href="#">Read more</a>
+        </div>
+        <div class="a-card">
+          <img src="./assets/tour-img-01.jpg" alt="Event Image">
+          <h3>LOREM IPSUM</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero porro facilis laborum voluptate sint nam excepturi maiores.</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </section>
+    <section class="footer-links">
+      <ul class="links f-links">
+        <li><a href="">BLOG</a></li>
+        <li><hr></li>
+        <li><a href="">JOBS</a></li>
+        <li><hr></li>
+        <li><a href="">BECOME A PARTNER</a></li>
+        <li><hr></li>
+        <li><a href="">HELP</a></li>
+        <li><hr></li>
+        <li><a href="">TERMS OF SERVICE</a></li>
+        <li><hr></li>
+        <li><a href="">PRIVACY POLICY</a></li>
+      </ul>
+      <ul class="links f-networks">
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+    </section>
+  </footer>
+
+  <!--
+  JavaScript -->
+  <script>
+    feather.replace()
+  </script>
+
+  <script src="./js/script.js" defer></script>
+  <script src="./js/countdown.js" defer></script>
+
+</body>
+</html>
